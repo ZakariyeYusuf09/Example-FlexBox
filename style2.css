@@ -84,6 +84,9 @@ ul li a:hover{
 #main .container div p{
     font-size: 1em;
 }
+.row div .fa-solid{
+    color: red;
+}
 /* hero */
 #hero{
     min-height: 550px;
