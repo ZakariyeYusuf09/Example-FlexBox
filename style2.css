@@ -94,14 +94,16 @@ ul li a:hover{
 }
 #hero .container .row{
     display: flex;
+    flex-wrap: wrap;
 }
 #hero .container .box{
-    flex: 1;
+    flex: 1 1 300px;
     background-color: var(--herobg);
-    margin: 20px 20px;
+    margin: 18px 18px;
     padding: 20px;
     color: #fff;
     border-radius: 7px;
+
 }
 .icons{
     display: flex;
@@ -191,9 +193,9 @@ span{
         
     }
     #hero .container .box{
-        flex: 1;
+
         background-color: var(--herobg);
-        margin: 20px 20px;
+        margin: 18px 18px;
         padding: 10px;
         color: #fff;
         border-radius: 7px;
@@ -226,6 +228,9 @@ span{
         text-align: center;
         padding-top: 20px;
     }
+    #hero .container .row .box{
+        flex: 1 1 150px;
+    } 
     
     #hero .container .row{
         flex-direction: column;
