@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --navcolor: #3474e6;
+    --main-color:  #0151cc;
+    --herobg: #0a51cc;
+}
+body{
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: 'Poppins', sans-serif;
+}
+img{
+    max-width: 100%;
+
+}
+h1{
+    /* margin-bottom: 15px;  */
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.nav-bar{
+    background-color: var(--navcolor);
+    width: 100%;
+    height: 50px;
+}
+.nav-bar .container .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+ul li{
+    margin-left: 17px;
+}
+ul li a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1em;
+    transition: .4s ease;
+    font-weight: 500;
+}
+ul li a:hover{
+    color: lightblue;
+}
+
+.logo h2{
+    color: #FFF;
+    font-size: 1.5em;
+}
+/* main */
+#main{
+    background: var(--main-color);
+    color: #fff;
+    min-height: 400px;
+}
+.img{
+    max-width: 400px;
+}
+#main .container .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+#main .container div h2{
+    font-size: 3em;
+}
+#main .container div p{
+    font-size: 1em;
+}
+/* hero */
+#hero{
+    min-height: 300px;
+    background: #f5f5f5f5;
+}
+#hero .container .row{
+    display: flex;
+}
+#hero .container .box{
+    flex: 1;
+    background-color: var(--herobg);
+    margin: 20px 20px;
+    padding: 20px;
+    color: #fff;
+    border-radius: 7px;
+}
+.icons{
+    display: flex;
+    margin-bottom: 8px;
+    align-items: center;
+    /* justify-content: center; */
+}
+.box .small-size{
+    font-weight: 300;
+}
+.icons p{
+    font-weight: 500;
+    font-size: 1.3em;
+}
+.icons i{
+    margin-right: 20px;
+    color: white;
+    font-size: 1.2em;
+}
+
+/* footer */
+footer{
+    margin: 25px 0;
+}
+footer i{
+    padding-left: 5px;
+}
+footer .You{
+    color: red;
+}
+
+@media only screen and (max-width: 380px){
+    .mains .container .row{
+        padding-top: 5px;
+    }
+    #main .container div h2{
+        font-size: 0.8em;
+    }
+    #main .container div p{
+        font-size: 0.7em;
+    }
+    .img{
+        max-width: 300px;
+       
+    }
+}
+@media only screen and (max-width: 400px){
+    .mains .container .row{
+        padding-top: 10px;
+    }
+    #main .container .row div h2{
+        font-size: 1.2em;
+    }
+    #main .container div p{
+        font-size: 1em;
+    }
+    .nav-bar{
+        background-color: var(--navcolor);
+        width: 100%;
+        height: 90px;
+    }
+    #main .container .row{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .nav-bar .container .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        flex-wrap: wrap;
+        
+    }
+    #hero .container .box{
+        flex: 1;
+        background-color: var(--herobg);
+        margin: 20px 20px;
+        padding: 10px;
+        color: #fff;
+        border-radius: 7px;
+    }
+    .icons{
+        display: flex;
+        margin-bottom: 8px;
+        align-items: center;
+        /* justify-content: center; */
+    }
+    .icons p{
+        font-weight: 500;
+        font-size: 1em;
+    }
+    i{
+        margin-right: 10px;
+        color: white;
+        font-size: 1em;
+    }
+}
+@media only screen and (max-width: 860px){
+    #main .container div h2{
+        font-size: 2em;
+    }
+}
+@media only screen and (max-width: 800px)
+{
+    .mains .container .row{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    #hero .container .row{
+        flex-direction: column;
+        text-align: center;
+        /* align-items: center; */
+
+    }
+  
+    #main .container div p{
+        font-size: 1em;
+    }
+    .icons{
+        display: flex;
+        margin-bottom: 8px;
+        /* align-items: center; */
+        text-align: center;
+        justify-content: center;
+    }
+}
