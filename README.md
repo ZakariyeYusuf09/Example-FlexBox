@@ -1,3 +1,3 @@
 # Example-FlexBox
 Flexbox Layout
-Liver Preview: https://flexboxeslayout.netlify.app/
+Live Preview: https://flexboxeslayout.netlify.app/
